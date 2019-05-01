@@ -1,0 +1,435 @@
+
+body{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+  text-align: center;
+}
+
+ul{
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  padding: 1px 1px 1px 1px;
+
+}
+
+a:link{
+color:Black;
+text-decoration: none;
+}
+
+a:visited {
+color: Black;
+text-decoration: none;
+}
+a:hover {
+color: White;
+text-decoration: none;
+}
+
+#SocialLogos{
+	margin-top: 15px;
+	margin-left: 80%;
+	height: 10px;
+	display: inline;
+}
+
+#SocialLogos img{
+	margin-top: 10px;
+	height: 50px;
+	width: 50px;
+}
+
+#text{
+	padding:10px 10px 10px 10px;
+}
+
+/*sourced from https://css-tricks.com/forums/topic/how-to-create-this-curved-border*/
+.footer {
+  width:100%;
+  height:150px;
+  /*background-color: lightblue;*/
+  border:1px solid #ED1D24;
+  border-width:0 0 30px 0;
+  margin:1rem auto;
+  /*-webkit-border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;
+  -moz-border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;*/
+  border-radius: 0% 0% 80% 0%;
+}
+
+
+#headerLogos img:hover{
+box-shadow: 0px 0px 14px 5px rgba(1,1,1,0.85);
+}
+
+#slider{
+margin:0 auto;
+width: 70%;
+height:auto;
+
+}
+
+#search{
+	padding-bottom: 10px;
+}
+
+#thanos img{
+	border-radius: 25px;
+
+}
+
+
+input[type=text] {
+padding: 12px 20px;
+ border:1px solid black;
+ border-radius: 5px;
+ width: 25%;
+ box-sizing: border-box;
+}
+input[type=Submit] {
+width: 5%;
+padding: 12px 20px;
+box-sizing: border-box;
+background:White;
+border:1px solid black;
+border-radius: 5px;
+text-align: center;
+}
+
+	/*Top Menu*/
+.toplevel{  /*UL element*/
+	/*border-style: solid;*/
+	margin:0 auto;
+	width:300px;
+}
+
+.toplevel li{
+	/* changed menu reference name to use classname instead */
+	padding:5px 10px 5px 10px;
+	margin:2px;
+	background-color:#ED1D24;
+	display:inline;
+	position:relative;
+	/*border: 1px solid green;*/
+}
+
+.toplevel li:hover{
+	background-color:black;
+	color:white;
+	cursor:pointer;
+}
+
+.toplevel li:hover .secondarymenu{
+	display:block;
+}
+
+.secondarymenu{
+	position:absolute;
+	background-color:Black;
+	width:95px;
+	left: 10px;
+	top:28px;
+	display:none;
+	padding:0px;
+}
+
+.secondarymenu li {
+	padding: 10px;
+	display: block;
+}
+
+
+
+ /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 032 css*/
+        .jssorb032 {position:absolute;}
+        .jssorb032 .i {position:absolute;cursor:pointer;}
+        .jssorb032 .i .b {fill:#fff;fill-opacity:0.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.25;}
+        .jssorb032 .i:hover .b {fill:#000;fill-opacity:.6;stroke:#fff;stroke-opacity:.35;}
+        .jssorb032 .iav .b {fill:#000;fill-opacity:1;stroke:#fff;stroke-opacity:.35;}
+        .jssorb032 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
+
+ /*TopHeader*/
+ #Topheader{
+	 margin-top: 30px;
+	 min-height:300px;
+	 background-color: #ED1D24;
+	 margin-bottom: 10px;
+}
+
+
+/*Accordion button
+Sourced from
+https://codepen.io/felipefialho/pen/ICkwe
+*/
+
+.fancy {
+  display: inline-block;
+  text-align: left;
+  margin: 1%;
+  width: 70%;
+}
+.fancy:hover .fancy-content {
+  max-height: 300px;
+}
+.fancy-content {
+  -webkit-transition: max-height 1s;
+  -moz-transition: max-height 1s;
+  -ms-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  transition: max-height 1s;
+  background: #c90000;
+  overflow: hidden;
+  max-height: 0;
+}
+.fancy-inner {
+  padding: 0 15px;
+}
+.fancy-toggle {
+  -webkit-transition: background 0.1s linear;
+  -moz-transition: background 0.1s linear;
+  -ms-transition: background 0.1s linear;
+  -o-transition: background 0.1s linear;
+  transition: background 0.1s linear;
+  background:#ed1d24 ;
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  font-size: 30px;
+  margin: 0 0 10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.fancy-toggle:hover {
+  background: #ea1212;
+}
+
+
+/*Cards*/
+div.card {
+	border: 1px solid #ED1D24;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-left: 5px;
+  width: 300px;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  text-align: center;
+
+  display:inline-block;
+}
+
+div.card img{
+	height:300px;
+	width:257px;
+}
+
+div.card:hover {
+	box-shadow: 0px 0px 14px 5px rgba(237,29,36,0.85);
+}
+
+div.container {
+  padding: 10px;
+		text-decoration: none;
+}
+
+
+#Hulkimgdiv{
+	margin-right: 50%;
+	margin-top:-550px;
+}
+
+#Ironmanimgdiv{
+	margin-right: 50%;
+	margin-top:-550px;
+}
+
+#Avengersimgdiv{
+	margin-right: 50%;
+	margin-top:-585px;
+}
+
+/*according feature*/
+
+
+.accordion div
+{
+	margin-left: 50%;
+	/*margin-left:40px;*/
+	width:750px;
+	height:393px;
+}
+
+.accordion img
+{
+	border:1px solid red;
+	margin: 0 auto;
+  display: block;
+  max-width:700px;
+  max-height:393px;
+  width: auto;
+  height: auto;
+}
+
+.accordion h3
+{
+	margin-left: 50%;
+	width:750px;
+	/*border: 1px solid black;*/
+	background-color:#ED1D24
+}
+
+.accordion iframe
+{
+  width:100%;
+  height:100%;
+}
+
+  /*screen resizing*/
+
+  @media screen and (max-width:1000px)
+{
+
+.toplevel li{
+	background-color:White;
+	}
+
+#Topheader{
+	border: 1px solid white;
+}
+
+.accordion h3
+{
+	/*border: 1px solid black;*/
+	background-color:white;
+}
+body{
+		background:#ED1D24;
+	}
+
+
+.box {
+  border:1px solid White;
+  border-width:0 0 30px 0;
+}
+
+p{
+	color:white;
+	}
+
+	H1{
+		color:white;
+		}
+		
+			.footer {
+	  border:1px solid white;
+	  border-width:0 0 30px 0;
+	}
+
+}
+
+  @media screen and (max-width:490px)
+{
+
+	/*Top Menu*/
+
+.toplevel li{
+	background-color:#ED1D24;
+}
+.toplevel li:hover{
+	background-color:black;
+	color:white;
+}
+.secondarymenu{
+	background-color:Black;
+}
+
+	
+body{
+	background:Black;
+	}
+
+	#Topheader{
+		border: 1px solid black;
+	}
+
+	#SocialLogos{
+		display: block;
+	}
+
+	#SocialLogos img{
+		margin-top: 50px;
+
+	}
+
+	#Avengersimgdiv img{
+
+		display:none;
+	}
+
+	#Ironmanimgdiv img{
+
+		display:none;
+	}
+
+	#Hulkimgdiv img{
+
+		display:none;
+	}
+
+	#text{
+		margin-top:560px;
+	}
+
+	.accordion div
+	{
+		margin:0 auto;
+		width:360px;
+		height:355px;
+	}
+
+	.accordion img
+	{
+	  max-width:360px;
+	  max-height:355px;
+	}
+
+	.accordion h3
+	{
+		border: 1px solid black;
+		margin:0 auto;
+		width:360px;
+		/*border: 1px solid black;*/
+		background-color:#ED1D24;
+	}
+
+	.footer {
+	  border:1px solid #ED1D24;
+	  border-width:0 0 30px 0;
+	}
+
+p{
+color:white;
+}
+}
