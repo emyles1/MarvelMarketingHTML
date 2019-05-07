@@ -1,122 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>jQuery UI Accordion - Default functionality</title>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
-  $( function() {
-    $( ".accordion" ).accordion();
-  } );
+    $(function() {
+      $(".accordion").accordion();
+    });
   </script>
 </head>
 
 <body>
 
   <div id="SocialLogos">
-    <a href = "https://www.Marvel.com"><img src='Images/Marvel-logo.png'/></a>
-    <a  href = "https://www.Facebook.com"><img src='Images/facebook.png'/></a>
-    <a href = "https://www.Twitter.com"><img src='Images/Twitter_Logo.svg'/></a>
+    <a href="https://www.Marvel.com"><img src='Images/Marvel-logo.png' /></a>
+    <a href="https://www.Facebook.com"><img src='Images/facebook.png' /></a>
+    <a href="https://www.Twitter.com"><img src='Images/Twitter_Logo.svg' /></a>
   </div>
 
   <div id="Topheader">
-  <ul class="toplevel"> <!-- new classname added -->
-  	<li>
-  	<a href = "Index.html">Home</a>
-  	</li>
-  	<li>
-  	Featured Hero
-  <ul class="secondarymenu">
-  	<li><a href = "Ironman.html">Ironman<a></li>
-  	<li><a href = "Hulk.html">Hulk<a></li>
-  	<li><a href = "Avengers.html">Avengers<a></li>
-  </ul>
-  	</li>
-  	<li>
-  	Other
-  <ul class="secondarymenu">
-  	<li><a href="Trailers.html">Trailers</a></li>
-  	<li><a href="Search.html">Search</a></li>
-  </ul>
-  	</li>
-  </ul>
-  	<div>
-  	<a href = "Ironman.html"><img src='Images/Iron-Circle.png'/></a>
-    <a href = "Hulk.html"><img src='Images/Hulk-Circle.png'/></a>
-    <a href = "Avengers.html"><img src='Images/Avengers-Circle.png'/></a>
-  	</div>
-  </div>
-
-
-
-<div class="accordion">
-  <h3>Avengers</h3>
-  <div>
-	<img src="Images/Averngers2.jpg">
-  </div>
-  <h3>Rouges Gallery</h3>
-  <div>
-    <img src="Images/Secret-Invasion.jpg">
-  </div>
-  <h3>Avengers Assemble</h3>
-  <div>
-    <iframe src="https://www.youtube.com/embed/lj_xZVgBIgc"></iframe>
-  </div>
-  <h3>Marvels Avengers</h3>
- 	<div>
-    <p>
-     When the Asgardian god Loki seeks revenge against his brother Thor, his machinations unwittingly lead teenager
- 	 Rick Jones to collect Ant-Man, the Wasp, and Iron Man to help Thor and the Hulk, whom Loki used as a pawn.
- 	 After the group vanquished Loki, Ant-Man stated that the five worked well together and suggested they form
- 	 a team; the Wasp named the group Avengers.
-     <a href = "https://www.marvel.com/teams-and-groups/avengers"><H2>Visit Avengers at Marvel.com</H2></a>
-    </p>
+    <ul class="toplevel">
+      <!-- new classname added -->
+      <li>
+        <a href="Index.html">Home</a>
+      </li>
+      <li>
+        Featured Hero
+        <ul class="secondarymenu">
+          <li><a href="Ironman.html">Ironman<a></li>
+          <li><a href="Hulk.html">Hulk<a></li>
+          <li><a href="Avengers.html">Avengers<a></li>
+        </ul>
+      </li>
+      <li>
+        Other
+        <ul class="secondarymenu">
+          <li><a href="Trailers.html">Trailers</a></li>
+          <li><a href="Search.html">Search</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div>
+      <a href="Ironman.html"><img src='Images/Iron-Circle.png' /></a>
+      <a href="Hulk.html"><img src='Images/Hulk-Circle.png' /></a>
+      <a href="Avengers.html"><img src='Images/Avengers-Circle.png' /></a>
     </div>
   </div>
 
-  <div  id="Avengersimgdiv">
-    <img src ="Images/AvengersBody.jpg">
+
+  <div id='Move'>
+    <div class="accordion">
+      <h3>Avengers</h3>
+      <div>
+        <img src="Images/Averngers2.jpg">
+      </div>
+      <h3>Rouges Gallery</h3>
+      <div>
+        <img src="Images/Secret-Invasion.jpg">
+      </div>
+      <h3>Avengers Assemble</h3>
+      <div>
+        <iframe src="https://www.youtube.com/embed/lj_xZVgBIgc"></iframe>
+      </div>
+      <h3>Marvels Avengers</h3>
+      <div>
+        <p id="blackp">
+          When the Asgardian god Loki seeks revenge against his brother Thor, his machinations unwittingly lead teenager
+          Rick Jones to collect Ant-Man, the Wasp, and Iron Man to help Thor and the Hulk, whom Loki used as a pawn.
+          After the group vanquished Loki, Ant-Man stated that the five worked well together and suggested they form
+          a team; the Wasp named the group Avengers.
+          <a href="https://www.marvel.com/teams-and-groups/avengers">
+            <H2>Visit Avengers at Marvel.com</H2>
+          </a>
+        </p>
+      </div>
+    </div>
   </div>
 
-<div id="text">
+  <div id="Avengersimgdiv">
+    <img src="Images/AvengersBody.jpg">
+  </div>
 
-<h1>Avengers</h1>
-<p>
-When the Asgardian god Loki seeks revenge against his brother Thor, his machinations unwittingly lead teenager
-Rick Jones to collect Ant-Man, the Wasp, and Iron Man to help Thor and the Hulk, whom Loki used as a pawn.
-After the group vanquished Loki, Ant-Man stated that the five worked well together and suggested they form
-a team; the Wasp named the group Avengers.
-</p>
-<p>
-The roster changed almost immediately; at the beginning of the second issue, Ant-Man became Giant-Man, and at
-the end of the issue, the Hulk left once he realized how much the others feared his unstable personality.
-Captain America soon joined the team in issue #4, and he was given "founding member" status in the
-Hulk's place. The Avengers went on to fight foes such as Baron Zemo, who formed the Masters of Evil,
-Kang the Conqueror, Wonder Man, and Count Nefaria.
-The next milestone came when every member but Captain America resigned; they were replaced by three former
-villains: Hawkeye, the Scarlet Witch, and Quicksilver. Giant-Man, now calling himself Goliath,
- and the Wasp rejoined. Hercules became part of the team, while the Black Knight, and the
-Black Widow, abetted the Avengers but did not become members until years later. Spider-Man was offered
-membership but did not join the group. The Black Panther joined after rescuing the team from the Grim
-Reaper and Klaw.The X-Men #45 (June 1968) featured a crossover with The Avengers #53 (June 1968).
- This was followed by the introduction of the android the Vision. Pym assumed the new
-identity of Yellowjacket in issue #59, and married the Wasp the following month.
-</p>
-<p>
-The Avengers headquarters was in a New York City building called Avengers Mansion, courtesy of Tony Stark
-(Iron Man's real identity). The mansion was serviced by Edwin Jarvis, the Avengers' faithful butler, and
-furnished with state of the art technology and defense systems, and included the Avengers' primary mode of transport:
-the five-engine Quinjet.
-</p>
-</div>
+  <div id="text">
 
-<div class="footer">
-</div>
+    <h1>Avengers</h1>
+    <p>
+      When the Asgardian god Loki seeks revenge against his brother Thor, his machinations unwittingly lead teenager
+      Rick Jones to collect Ant-Man, the Wasp, and Iron Man to help Thor and the Hulk, whom Loki used as a pawn.
+      After the group vanquished Loki, Ant-Man stated that the five worked well together and suggested they form
+      a team; the Wasp named the group Avengers.
+    </p>
+    <p>
+      The roster changed almost immediately; at the beginning of the second issue, Ant-Man became Giant-Man, and at
+      the end of the issue, the Hulk left once he realized how much the others feared his unstable personality.
+      Captain America soon joined the team in issue #4, and he was given "founding member" status in the
+      Hulk's place. The Avengers went on to fight foes such as Baron Zemo, who formed the Masters of Evil,
+      Kang the Conqueror, Wonder Man, and Count Nefaria.
+      The next milestone came when every member but Captain America resigned; they were replaced by three former
+      villains: Hawkeye, the Scarlet Witch, and Quicksilver. Giant-Man, now calling himself Goliath,
+      and the Wasp rejoined. Hercules became part of the team, while the Black Knight, and the
+      Black Widow, abetted the Avengers but did not become members until years later. Spider-Man was offered
+      membership but did not join the group. The Black Panther joined after rescuing the team from the Grim
+      Reaper and Klaw.The X-Men #45 (June 1968) featured a crossover with The Avengers #53 (June 1968).
+      This was followed by the introduction of the android the Vision. Pym assumed the new
+      identity of Yellowjacket in issue #59, and married the Wasp the following month.
+    </p>
+    <p>
+      The Avengers headquarters was in a New York City building called Avengers Mansion, courtesy of Tony Stark
+      (Iron Man's real identity). The mansion was serviced by Edwin Jarvis, the Avengers' faithful butler, and
+      furnished with state of the art technology and defense systems, and included the Avengers' primary mode of transport:
+      the five-engine Quinjet.
+    </p>
+  </div>
+
+  <div class="footer">
+  </div>
 </body>
 
 </html>

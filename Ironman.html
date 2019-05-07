@@ -1,103 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>jQuery UI Accordion - Default functionality</title>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
-  $( function() {
-    $( ".accordion" ).accordion();
-  } );
+    $(function() {
+      $(".accordion").accordion();
+    });
   </script>
 </head>
 
 <body>
 
   <div id="SocialLogos">
-    <a href = "https://www.Marvel.com"><img src='Images/Marvel-logo.png'/></a>
-    <a  href = "https://www.Facebook.com"><img src='Images/facebook.png'/></a>
-    <a href = "https://www.Twitter.com"><img src='Images/Twitter_Logo.svg'/></a>
+    <a href="https://www.Marvel.com"><img src='Images/Marvel-logo.png' /></a>
+    <a href="https://www.Facebook.com"><img src='Images/facebook.png' /></a>
+    <a href="https://www.Twitter.com"><img src='Images/Twitter_Logo.svg' /></a>
   </div>
 
   <div id="Topheader">
-  <ul class="toplevel"> <!-- new classname added -->
-  	<li>
-  	<a href = "Index.html">Home</a>
-  	</li>
-  	<li>
-  	Featured Hero
-  <ul class="secondarymenu">
-  	<li><a href = "Ironman.html">Ironman<a></li>
-  	<li><a href = "Hulk.html">Hulk<a></li>
-  	<li><a href = "Avengers.html">Avengers<a></li>
-  </ul>
-  	</li>
-  	<li>
-  	Other
-  <ul class="secondarymenu">
-  	<li><a href="Trailers.html">Trailers</a></li>
-  	<li><a href="Search.html">Search</a></li>
-  </ul>
-  	</li>
-  </ul>
-  	<div>
-  	<a href = "Ironman.html"><img src='Images/Iron-Circle.png'/></a>
-    <a href = "Hulk.html"><img src='Images/Hulk-Circle.png'/></a>
-    <a href = "Avengers.html"><img src='Images/Avengers-Circle.png'/></a>
-  	</div>
-  </div>
-
-<div class="accordion">
-
-  <h3>Ironman</h3>
-  <div>
-    <img src="Images/Ironman.jpg">
-  </div>
-  <h3>Rouges Gallery</h3>
-  <div >
-    <img src="Images/ironmanvillains.jpg">
-  </div>
-  <h3>Suit up</h3>
-  <div >
-    <iframe src="https://www.youtube.com/embed/c-QZdUSV4QU"></iframe>
-  </div>
-  <h3>Marvels Ironman</h3>
- 	<div >
-    <p>
-    Genius. Billionaire. Playboy. Philanthropist. Tony Stark's confidence is only
-	matched by his high-flying abilities as the hero called Iron Man.
-    <a href = "https://www.marvel.com/characters/iron-man-tony-stark">Visit Ironman at Marvel.com</a>
-    </p>
+    <ul class="toplevel">
+      <!-- new classname added -->
+      <li>
+        <a href="Index.html">Home</a>
+      </li>
+      <li>
+        Featured Hero
+        <ul class="secondarymenu">
+          <li><a href="Ironman.html">Ironman<a></li>
+          <li><a href="Hulk.html">Hulk<a></li>
+          <li><a href="Avengers.html">Avengers<a></li>
+        </ul>
+      </li>
+      <li>
+        Other
+        <ul class="secondarymenu">
+          <li><a href="Trailers.html">Trailers</a></li>
+          <li><a href="Search.html">Search</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div>
+      <a href="Ironman.html"><img src='Images/Iron-Circle.png' /></a>
+      <a href="Hulk.html"><img src='Images/Hulk-Circle.png' /></a>
+      <a href="Avengers.html"><img src='Images/Avengers-Circle.png' /></a>
     </div>
-</div>
+  </div>
 
-<div  id="Ironmanimgdiv">
-  <img src ="Images/IronmanBody.jpg">
-</div>
+  <div id='Move'>
+    <div class="accordion">
+      <h3>Ironman</h3>
+      <div>
+        <img src="Images/Ironman.jpg">
+      </div>
+      <h3>Rouges Gallery</h3>
+      <div>
+        <img src="Images/ironmanvillains.jpg">
+      </div>
+      <h3>Suit up</h3>
 
-<div id="text">
+      <div>
+        <iframe src="https://www.youtube.com/embed/c-QZdUSV4QU"></iframe>
+      </div>
+      <h3>Marvels Ironman</h3>
+      <div>
+        <p id="blackp">
+          Genius. Billionaire. Playboy. Philanthropist. Tony Stark's confidence is only
+          matched by his high-flying abilities as the hero called Iron Man.
+          <a href="https://www.marvel.com/characters/iron-man-tony-stark">
+            <H2>Visit Ironman at Marvel.com</H2></a>
+        </p>
+      </div>
+    </div>
+  </div>
 
-<h1>Ironman</h1>
-<p>
-  Anthony Edward Stark is the son of wealthy industrialist and head of Stark Industries,
-  Howard Stark, and Maria Stark. A boy genius, he enters MIT at the age of 15 to study engineering and
-  later receives master's degrees in engineering and physics. After his parents are killed in a car accident,
-  he inherits his father's company.
-</p>
-<p>
-  Stark is injured by a booby trap and captured by enemy forces led by Wong-Chu. Wong-Chu orders Stark
-  to build weapons, but Stark's injuries are dire and shrapnel is moving towards his heart. His fellow
-  prisoner, Ho Yinsen, a Nobel Prize-winning physicist whose work Stark had greatly admired during college, constructs a magnetic chest plate to keep the shrapnel from reaching Stark's heart. In secret, Stark and Yinsen use the workshop to design and construct a suit of powered armor, which Stark uses to escape. During the escape attempt, Yinsen sacrifices his life to save Stark's by distracting the enemy as Stark recharges. Stark takes revenge on his kidnappers and rejoins the American forces, on his way meeting a wounded American Marine fighter pilot, James "Rhodey" Rhodes.
-</p>
-</div>
+  <div id="Ironmanimgdiv">
+    <img src="Images/IronmanBody.jpg">
+  </div>
 
-<div class="footer">
-</div>
+  <div id="text">
+
+    <h1>Ironman</h1>
+    <p>
+      Anthony Edward Stark is the son of wealthy industrialist and head of Stark Industries,
+      Howard Stark, and Maria Stark. A boy genius, he enters MIT at the age of 15 to study engineering and
+      later receives master's degrees in engineering and physics. After his parents are killed in a car accident,
+      he inherits his father's company.
+    </p>
+    <p>
+      Stark is injured by a booby trap and captured by enemy forces led by Wong-Chu. Wong-Chu orders Stark
+      to build weapons, but Stark's injuries are dire and shrapnel is moving towards his heart. His fellow
+      prisoner, Ho Yinsen, a Nobel Prize-winning physicist whose work Stark had greatly admired during college, constructs a magnetic chest plate to keep the shrapnel from reaching Stark's heart. In secret, Stark and Yinsen use the workshop to design
+      and construct a suit of powered armor, which Stark uses to escape. During the escape attempt, Yinsen sacrifices his life to save Stark's by distracting the enemy as Stark recharges. Stark takes revenge on his kidnappers and rejoins the American
+      forces, on his way meeting a wounded American Marine fighter pilot, James "Rhodey" Rhodes.
+    </p>
+  </div>
+
+  <div class="footer">
+  </div>
 </body>
 
 </html>
